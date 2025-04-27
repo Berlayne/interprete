@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "jspdf": "^2.5.2"
+  },
+  "name": "interprete",
+  "version": "1.0.0",
+  "description": "Programa para dividir un archivo plano en secciones deacuerdo a el parametro que se le indique para dividir y luego pasarlo a PDF",
+  "main": "interprete.js"
+}

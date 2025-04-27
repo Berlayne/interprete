@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interprete</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <h1>Dividir archivo y convertir en pdf</h1>
+
+    <input type="file" id="fileInput"/>
+
+    <br></br>
+
+    <label for="lineCount">numero de lineas: </label>
+    <input type="number" id="lineCount" placeholder="0000">
+
+    <br></br>
+
+    <label for="splitWord">palabra para dividir: </label>
+    <input type="text" id="splitWord" placeholder="palabra clave">
+
+    <br></br>
+
+    <button onclick="processFile()">Dividir archivo</button>
+
+    <div id="result"></div>
+
+    <script src="interprete.js"></script>
+    
+</body>
+</html>

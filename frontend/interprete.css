@@ -1,0 +1,209 @@
+/* Estilos generales */
+body {
+    background-color: #5d5d5d;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los contenedores se acomoden en varias filas */
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura */
+}
+
+.container, .container2, .container3 {
+    width: 100%; /* Los contenedores ocupan todo el ancho por defecto */
+    max-width: 800px; /* Limita el ancho máximo */
+    margin: 10px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 5px solid #000000;
+    border-radius: 30px;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    background-color: lightblue;
+    text-align: center;
+}
+
+#fileInput {
+    background-color: rgb(200, 200, 200);
+    width: 570px;
+    font-size: 25px;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+label[for="lineCount"] {
+    font-size: 25px;
+    margin-left:20%;
+}
+
+#lineCount {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 2%;
+    border-color: rgb(255, 17, 64);
+    width: 10%;
+}
+
+label[for="splitWord"] {
+    font-size: 25px;
+    margin-left: 15%;
+}
+
+#splitWord {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 2%;
+    border-color: rgb(250, 9, 57);
+    
+}
+
+button {
+    background-color: rgb(254, 242, 76);
+    margin-left: 27%;
+    font-size: 30px;
+    border-radius: 50px;
+    margin-top: 2%;
+    width: 50%;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: rgb(122, 251, 83);
+}
+
+.email {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 27px;
+    margin-left: 25px;
+}
+
+.email:hover {
+    background-color: rgb(129, 224, 253);
+}
+
+.container2 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 7%;
+}
+
+.container2 h1 {
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container2 label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #000000;
+}
+
+.container2 input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f01111;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.container2 input:focus {
+    border-color: #007bff;
+}
+
+.container2 button {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.limpiar {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 27px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.limpiar:hover {
+    background-color: rgb(129, 224, 253);
+}
+
+.container3 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+}
+
+/* Media Queries para pantallas más pequeñas */
+
+/* Pantallas de 768px o menos (tabletas y móviles en apaisado) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Los contenedores se apilan verticalmente */
+        justify-content: flex-start;
+    }
+
+    .container, .container2, .container3 {
+        width: 90%; /* Ocupan el 90% del ancho de la pantalla */
+        margin: 10px 0;
+       
+    }
+
+    #fileInput {
+        width: 100%;
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    button {
+        width: 80%;
+        font-size: 25px;
+        margin-left: 10%;
+    }
+
+    .email {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+}
+
+/* Pantallas de 480px o menos (móviles pequeños) */
+@media (max-width: 480px) {
+    body {
+        flex-direction: column; /* Los contenedores se apilan verticalmente */
+    }
+
+    .container, .container2, .container3 {
+        width: 95%; /* Ocupan el 95% del ancho de la pantalla */
+        margin: 5px 0;
+    }
+
+    #fileInput {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    button {
+        width: 90%;
+        font-size: 22px;
+    }
+
+    .email {
+        font-size: 20px;
+    }
+}
